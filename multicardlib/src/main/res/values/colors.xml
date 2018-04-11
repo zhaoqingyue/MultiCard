@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorNormal">#222222</color>
+    <color name="colorHint">#7A7E83</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="colorLine">#ffeeeeee</color>
+    <color name="colorItemNormal">#ffffff</color>
+    <color name="colorItemPress">#bbbbbb</color>
+    <color name="colorCircleBg">#B4B4B4</color>
+    <color name="colorCircle">#ffffff</color>
+
+</resources>

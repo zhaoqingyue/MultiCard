@@ -17,6 +17,9 @@ import com.zqy.multicardlib.R;
  * Created by zhaoqy on 2018/4/11.
  */
 
+/**
+ * 多功能卡片
+ */
 public class MultiCard extends LinearLayout {
 
     private TextView mLetter;

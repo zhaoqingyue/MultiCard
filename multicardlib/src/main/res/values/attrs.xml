@@ -2,20 +2,17 @@
 <resources>
 
     <declare-styleable name="MultiCard">
-        <attr name="mc_hasletter" format="boolean"/>    <!-- 是否有字母 -->
+        <attr name="mc_hasletter" format="boolean"/>    <!-- 是否显示第一个字符 -->
         <attr name="mc_icon" format="reference"/>       <!-- icon图标 -->
         <attr name="mc_title" format="string"/>         <!-- 标题 -->
         <attr name="mc_title_color" format="color"/>    <!-- 标题颜色值 -->
         <attr name="mc_hascontent" format="boolean"/>   <!-- 是否有内容 -->
         <attr name="mc_content" format="string"/>       <!-- 内容 -->
         <attr name="mc_content_color" format="color"/>  <!-- 内容文本颜色值 -->
-
         <attr name="mc_ismobile" format="boolean"/>     <!-- 内容是否是手机号 -->
         <attr name="mc_alignRight" format="boolean"/>   <!-- 内容是否右对齐 -->
-
         <attr name="mc_hasarrow" format="boolean"/>     <!-- 是否有箭头 -->
         <attr name="mc_arrowicon" format="reference"/>  <!-- 箭头icon图标 -->
-
         <attr name="mc_hasline" format="boolean"/>      <!-- 是否有间隔线 -->
 
     </declare-styleable>

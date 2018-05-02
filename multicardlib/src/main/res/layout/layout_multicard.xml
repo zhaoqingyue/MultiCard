@@ -2,32 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/selector_card_bg"
               android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/layout"
+        android:id="@+id/mc_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/selector_card_bg"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:clickable="true">
 
         <TextView
-            android:id="@+id/letter"
+            android:id="@+id/tv_letter"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/shape_circle_bg"
             android:gravity="center"
             android:text=""
             android:textColor="@color/colorCircle"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
@@ -35,9 +45,11 @@
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/content"
+            android:id="@+id/tv_content"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:gravity="right"
             android:text=""
@@ -46,18 +58,19 @@
             android:visibility="visible"/>
 
         <ImageView
-            android:id="@+id/arrow"
+            android:id="@+id/iv_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:src="@mipmap/icon_right"/>
+            android:src="@mipmap/icon_right"
+            android:visibility="gone"/>
 
     </LinearLayout>
 
     <View
-        android:id="@+id/line"
+        android:id="@+id/v_line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/colorLine"/>
+        android:background="@color/colorLine"
+        android:visibility="visible"/>
 
 </LinearLayout>

@@ -1,26 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zqy.multicard.MainActivity"
-    android:orientation="vertical">
+    android:background="@color/colorWindows"
+    android:orientation="vertical"
+    tools:context="com.zqy.multicard.MainActivity">
 
-    <com.zqy.multicardlib.widget.MultiCard
-        android:id="@+id/personal"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        app:mc_hasletter="false"
-        app:mc_title="个人主页"/>
+        android:layout_height="match_parent"
+        android:background="@color/colorWindows"
+        android:scrollbarSize="6sp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
 
-    <com.zqy.multicardlib.widget.MultiCard
-        android:id="@+id/id"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        app:mc_content="42022219******3774"
-        app:mc_hasletter="false"
-        app:mc_title="身份证号"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:id="@+id/normal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                app:mc_hasarrow="false"
+                app:mc_hasline="false"
+                app:mc_title="Normal"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                app:mc_icon="@mipmap/icon_default"
+                app:mc_title="设置图标"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:id="@+id/with_letter"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_hasletter="true"
+                app:mc_title="显示第一次字符"
+                app:mc_hasline="false"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:id="@+id/show_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                app:mc_hasarrow="true"
+                app:mc_title="显示箭头"
+                app:mc_hascontent="true"
+                app:mc_content="默认箭头向右"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_hasarrow="true"
+                app:mc_title="设置右箭头图标"
+                app:mc_arrowicon="@mipmap/icon_down"
+                app:mc_hasline="false"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                app:mc_title="设置标题颜色值"
+                app:mc_title_color="@color/colorAccent"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_content="我是内容"
+                app:mc_hascontent="true"
+                app:mc_title="设置内容"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_content="内容默认右对齐"
+                app:mc_content_color="@color/colorAccent"
+                app:mc_hascontent="true"
+                app:mc_title="设置内容颜色值"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_alignRight="false"
+                app:mc_content="我是内容"
+                app:mc_hascontent="true"
+                app:mc_title="设置内容左对齐"/>
+
+            <com.zqy.multicardlib.widget.MultiCard
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:mc_content="13421812821"
+                app:mc_hascontent="true"
+                app:mc_title="设置手机号码"
+                app:mc_ismobile="true"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>

@@ -2,34 +2,22 @@
 <resources>
 
     <declare-styleable name="MultiCard">
-        <attr name="mc_bg_color" format="color"/>       <!-- 背景颜色值 -->
+        <attr name="mc_hasletter" format="boolean"/>    <!-- 是否有字母 -->
+        <attr name="mc_icon" format="reference"/>       <!-- icon图标 -->
         <attr name="mc_title" format="string"/>         <!-- 标题 -->
         <attr name="mc_title_color" format="color"/>    <!-- 标题颜色值 -->
+        <attr name="mc_hascontent" format="boolean"/>   <!-- 是否有内容 -->
         <attr name="mc_content" format="string"/>       <!-- 内容 -->
         <attr name="mc_content_color" format="color"/>  <!-- 内容文本颜色值 -->
-        <attr name="mc_hasarrow" format="boolean"/>     <!-- 是否有箭头 -->
-        <attr name="mc_hasline" format="boolean"/>      <!-- 是否有间隔线 -->
-        <attr name="mc_hasletter" format="boolean"/>    <!-- 是否有字母 -->
-        <attr name="mc_hasunderline" format="boolean"/> <!-- 是否有下划线 -->
-    </declare-styleable>
 
-    <!-- 垂直型卡片 -->
-    <declare-styleable name="VerticalCard">
-        <attr name="vc_icon" format="reference"/>      <!-- icon图标 -->
-        <attr name="vc_title" format="string"/>        <!-- 标题 -->
-        <attr name="vc_content" format="string"/>      <!-- 内容 -->
-        <attr name="vc_content_color" format="color"/> <!-- 内容文本颜色值 -->
-        <attr name="vc_clickable" format="boolean"/>   <!-- 内容是否是可点击 -->
-        <attr name="vc_alignRight" format="boolean"/>  <!-- 内容是否右对齐 -->
-        <attr name="vc_hascontent" format="boolean"/>  <!-- 是否有内容 -->
-        <attr name="vc_hasarrow" format="boolean"/>    <!-- 是否有箭头 -->
-        <attr name="vc_arrowicon" format="reference"/> <!-- 箭头icon图标 -->
-        <attr name="vc_dropable" format="boolean"/>    <!-- 是否可下拉 -->
-        <attr name="vc_hasline" format="boolean"/>     <!-- 是否有间隔线 -->
-        <attr name="vc_ismobile" format="boolean"/>    <!-- 内容是否是手机号 -->
-        <attr name="vc_withstar" format="boolean"/>    <!-- 是否带星 -->
-        <attr name="vc_paddingLeft" format="float"/>
-        <attr name="value_text_size" format="dimension" />  <!-- 显示值字体大小 -->
+        <attr name="mc_ismobile" format="boolean"/>     <!-- 内容是否是手机号 -->
+        <attr name="mc_alignRight" format="boolean"/>   <!-- 内容是否右对齐 -->
+
+        <attr name="mc_hasarrow" format="boolean"/>     <!-- 是否有箭头 -->
+        <attr name="mc_arrowicon" format="reference"/>  <!-- 箭头icon图标 -->
+
+        <attr name="mc_hasline" format="boolean"/>      <!-- 是否有间隔线 -->
+
     </declare-styleable>
 
 </resources>

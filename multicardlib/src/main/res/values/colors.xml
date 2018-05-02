@@ -10,4 +10,7 @@
     <color name="colorCircleBg">#B4B4B4</color>
     <color name="colorCircle">#ffffff</color>
 
+    <color name="mobile_color">#009C52</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>

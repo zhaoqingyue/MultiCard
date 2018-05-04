@@ -3,9 +3,9 @@
 
 - 效果图
 
-![image](https://github.com/zhaoqingyue/MultiCard/blob/master/img/1.png)
+![image](https://github.com/zhaoqingyue/MultiCard/blob/master/img/11.png)
 
-![image](https://github.com/zhaoqingyue/MultiCard/blob/master/img/2.png)
+![image](https://github.com/zhaoqingyue/MultiCard/blob/master/img/22.png)
 
 
 - **gradle引用**
